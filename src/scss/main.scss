@@ -1,2 +1,19 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import 'menu';
+@import 'variables';
+
+*
+{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    background: $Serenity;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
