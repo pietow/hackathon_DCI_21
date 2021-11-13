@@ -1,10 +1,11 @@
 // This is where you can import other stylesheets or write your scss code
 @import 'variables';
+
+
 @import 'config';
 @import 'menu';
 @import 'responsive';
 @import 'hero';
-
 *
 {
     box-sizing: border-box;
@@ -13,13 +14,14 @@
 }
 
 body {
-    background: $Serenity;
+  background: $Serenity;
 }
 
 header {
     position: fixed;
     display: flex;
     flex-direction: row;
+ 
 }
 
 main {
