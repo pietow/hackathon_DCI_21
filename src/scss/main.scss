@@ -37,30 +37,66 @@ body {
 // #myVideo {
 //     height: 334px;
 // }
-
-.chef {
+.chef1 {
   position: fixed;
-  top: 50px;
-  // left:-200px;
   left: 0;
   transform: translateX(-600px);
-  transition: all 2s;
+  transition: transform 2s;
   background-image: url("../images/minion1.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
   height: 300px;
   z-index: 999;
-
-  span {
-    position: absolute;
-    transform: translateX("200px");
-    border: red solid 1px;
-    color: white;
-    background-color: black;
-    width: 400px;
-    border-radius: 30%;
-  }
+}
+.chef2 {
+  position: fixed;
+  left: 0;
+  transform: translateX(100vw);
+  transition: transform 2s;
+  background-image: url("../images/minion1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  z-index: 999;
+}
+.chef3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-300px);
+  transition: transform 2s;
+  background-image: url("../images/minion1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  z-index: 999;
+}
+.chef4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(100vh);
+  transition: transform 2s;
+  background-image: url("../images/minion1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  z-index: 999;
+}
+.chef1 span, .chef2 span , .chef3 span , .chef4 span  {
+  position: absolute;
+  transform: translateX(200px);
+  border: red solid 1px;
+  color: black;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  border-radius: 30%;
+  padding: 50px;
 }
 
 main {
