@@ -1,0 +1,42 @@
+@include media-md {
+
+    .menu-btn__burger{
+        visibility: hidden;
+        transition: all 0s ease-in-out;
+        
+        &::after {
+            transition: all 0s ease-in-out;
+        }
+
+        &::before {
+            transition: all 0s ease-in-out;
+        }
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        transition: all 0s ease-in-out;
+
+        &__logo {
+            transition: all 0s ease-in-out;
+            transform: translateY(0);
+        }
+
+        .menu-nav {
+            display:flex;
+            flex-direction: row;
+            margin-right: 5rem;
+            transform: translateX(0);
+
+            &__item {
+                transform: translateX(0);
+                transition: all 0s ease-in-out;
+            }
+
+        }
+    }
+    
+
+}

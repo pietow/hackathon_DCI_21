@@ -1,6 +1,9 @@
 // This is where you can import other stylesheets or write your scss code
-@import 'menu';
 @import 'variables';
+@import 'config';
+@import 'menu';
+@import 'responsive';
+@import 'hero';
 
 *
 {
@@ -14,6 +17,10 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
+}
+
+main {
 }

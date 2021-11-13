@@ -1,0 +1,34 @@
+@mixin transition-ease {
+    transition: all 1s ease-in-out;
+}
+
+@mixin delay($num) {
+    @for $index from 1 to ($num) {
+        .menu-nav__item:nth-child(#{$index}) {
+            transition-delay: (0.1s * $index) - 0.1s;
+        }
+    }
+}
+
+//Responsive:
+
+//media size
+@mixin media-md {
+    @media screen and (min-width: 700px) {
+        @content;
+    }
+}
+
+//large
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+//extra large
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
