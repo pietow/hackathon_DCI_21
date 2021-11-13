@@ -15,7 +15,7 @@
   }
 
   @keyframes mymove {
-    0%        {top: 0px; left: 100px; background-image: url("./images/c");}
+    0%        {top: 0px; left: 100px; background-image: url("/images/");}
     12%       {top: 0px; left: 0; background-image: url("./images/download.png");}
     13%       {top: 0; left: 0px;background-image: url("./images/download.png");width: 100px;height: 100px;} 
     20%       {top: 0; left: 0px;background-image: url("../images/download.png");width: 70px;height: 70px;}
