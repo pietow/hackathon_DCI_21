@@ -72,8 +72,8 @@ const messages = [
     }
 ];
 const characters = [
-    '../images/minion1.png',
-    '../images/minion2.png'
+    './images/minion1.png',
+    './images/minion2.png'
 ];
 function getRandomInt(min, max) {
     min = Math.ceil(min);
