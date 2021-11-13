@@ -1,0 +1,115 @@
+.menu-btn {
+    position: fixed;
+    // z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    &__burger {
+        position: fixed;
+        top: calc(1rem + 25px - 4px);
+        background: $Cognac;
+        // z-index: 2;
+        width: 50px;
+        height: 8px;
+        @include transition-ease;
+
+        &::before {
+            position: fixed;
+            // top: calc(1rem + 25px / 2 - 4px);
+            transform: translateY(-15px);
+            content: '';
+            width: 30px;
+            height: 8px;
+            // border:red solid 1px;
+            background: $Cognac;
+            @include transition-ease;
+            
+        }
+
+        &::after {
+            position: fixed;
+            // top: calc(1rem + 25px * 1.5 - 4px);
+            transform: translateY(15px);
+            content: '';
+            width: 50px;
+            height: 8px;
+            // border:red solid 1px;
+            background: $Cognac;
+            @include transition-ease;
+            
+        }
+
+        &.open {
+            transform: rotate(360deg);
+            // background: transparent;
+
+            &::before {
+                width: 50px;
+                height: 8px;
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(-45deg);
+
+            }
+        }
+
+        
+    }
+}
+
+.nav {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // visibility: hidden;
+    // opacity:0;
+    margin: 1rem;
+    // @include transition-ease;
+
+    &.open {
+        // visibility: visible;
+        // opacity:1;
+    }
+
+    &__logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 1rem;
+        transition: transform 1s ease-in-out;
+        transform: translateY(-100px);
+        
+        &.open {
+            transform: translateY(0);
+
+        }
+    }
+
+    .menu-nav{
+        list-style-type: none;
+
+        &__item {
+            margin: .75rem;
+            text-transform: uppercase;
+            transform: translateX(1000px);
+            @include transition-ease;
+            &.open {
+                // @include transition-ease;
+                transform: translateX(0);
+            }
+        }
+        
+        &__link {
+            text-decoration: none;
+        }
+
+    }
+}
+
+@include delay(6)
