@@ -73,8 +73,9 @@ const messages = [
     }
 ];
 const characters = [
-    'images/minion1.png',
-    'images/minion2.png'
+    'images/chef1.png',
+    'images/chef3.png',
+    'images/chef4.png'
 ];
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -157,3 +158,100 @@ setInterval(() => {
         startIdx++;
     }
 }, 10000)
+
+const dishes = [
+    {
+        name: 'yummy',
+        price: 'EUR 45',
+        image: 'images/dishes/10854_chocolate_souffle.webp'
+    },
+    {
+        name: 'dish2',
+        price: '$5',
+        image: 'images/dishes/10651_salad_lyonnaisey.webp'
+    },{
+        name: 'dish3',
+        price: '$8',
+        image: 'images/dishes/28555_nicoise_salad2.webp'
+    },{
+        name: 'dish4',
+        price: '$7',
+        image: 'images/dishes/11137_spiked_apple_galette.webp'
+    }, 
+    {
+        name: 'dish5',
+        price: '$9',
+        image: 'images/dishes/13500_brandied_pear_tart.webp'
+    },
+    {
+        name: 'dish6',
+        price: '$9',
+        image: 'images/dishes/13696_smashed_potatoes.webp'
+    },
+    {
+        name: 'dish7',
+        price: '$9',
+        image: 'images/dishes/27893_coq_au_vin.webp'
+    }, 
+    {
+        name: 'dish8',
+        price: '$9',
+        image: 'images/dishes/28273_asparagus_mimosa.webp'
+    }
+];
+
+const productsSection = document.querySelector('#productsSection');
+const tray = document.querySelector('.tray .row');
+dishes.forEach(dish => {
+    const dishHtml = `<div class="product">
+    <picture>
+      <img src="${dish.image}" alt="nicoise salad" />
+    </picture>
+    <div class="detail">
+      <p>
+        <b>${dish.name}</b><br />
+        
+      </p>
+      <samp>${dish.price}</samp>
+    </div>
+    <div class="button">
+      <p class="star">
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+      </p>
+      <a class="owl__link" href="#">Add</a>
+    </div>
+  </div>`;
+  const product = createElementFromHTML(dishHtml);
+  product.getElementsByClassName('owl__link')[0].addEventListener('click', (e) => {
+      e.preventDefault();
+      const cartHtml = `<div class="col-2 mt-3"><div class="card" >
+      <img class="card-img-top" src="${dish.image}" width="100" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${dish.name}</h5>
+        <p class="card-text">${dish.price}</p>
+        <a href="#" class="btn btn-danger">Delete</a>
+      </div>
+    </div>` ;
+const cardElement = createElementFromHTML(cartHtml) 
+      cardElement.querySelector('.btn-danger').addEventListener('click', (e) => {
+          e.preventDefault()
+          cardElement.remove() 
+      })
+    tray.appendChild(cardElement);
+  })
+  productsSection.append(product)
+
+})
+
+
+function createElementFromHTML(htmlString) {
+    var div = document.createElement('div');
+    div.innerHTML = htmlString.trim();
+  
+    // Change this to div.childNodes to support multiple top-level nodes
+    return div.firstChild; 
+  }
