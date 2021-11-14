@@ -65,11 +65,11 @@ const messages = [
     },
     {
         time: 4,
-        message: 'Hi I am you minion cook'
+        message: 'Hi I am your super cool chef!'
     },
     {
         time: 2,
-        message: 'I am you chocolate delivery guy'
+        message: 'I am your chocolate delivery guy'
     }
 ];
 const characters = [

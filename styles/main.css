@@ -8,6 +8,13 @@ body {
   background: #CCDBEE;
 }
 
+.carousel-caption {
+  font-size: 2rem;
+}
+.carousel-caption h2 {
+  font-size: 2rem;
+}
+
 .overall {
   position: fixed;
   top: 0;

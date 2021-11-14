@@ -1,5 +1,3 @@
-//let myLatLng = { lat: 15.363, lng: 131.044 };
-
 let place = {};
 let myLatLng = { lat: 15.363, lng: 131.044 };
 function init() {
@@ -18,7 +16,6 @@ function init() {
     })
 }
 function myMap(myLatLng) {
-
     var mapProp = {
         center: new google.maps.LatLng(myLatLng.lat, myLatLng.lng),
         //center: new google.maps.LatLng(myLatLng[0], myLatLng[1]),
@@ -28,7 +25,15 @@ function myMap(myLatLng) {
     new google.maps.Marker({
         position: myLatLng,
         map,
+        animation: google.maps.Animation.BOUNCE,
         icon: 'images/smallminion.png',
         title: "Send Love",
-    });
+    });google.maps.event.addListener(marker, 'click', toggleBounce);
 }
+function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
