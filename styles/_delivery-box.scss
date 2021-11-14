@@ -1,5 +1,13 @@
+$background_first:#232528;
+$background_second: grey;
+
+
 .delivery_main
 {
+  background-color: $background_first;
+  background-image: url('../src/images/deliverys/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Indie Flower', cursive;
     font-size: 2rem;
     text-transform: uppercase;
@@ -27,19 +35,16 @@
 .delivery_box {
     width: 500px;
     height: auto;
-    position: relative;
+    position: absolute;
     animation: mymove 8s 3;
     background-size: cover; 
   }
 
   @keyframes mymove {
-    0%        {top: -100px; left: 400px; background-image: url("/src/images/deliverys/qrcoins.png");width: 200px;height: 200px;}
-    22%       {top: 0px; left: 0; background-image: url("/src/images/deliverys/qrcoins.png");}
-    33%       {top: 0; left: 0px;background-image: url("/src/images/deliverys/qrcoins.png");width: 200px;height: 200px;} 
-    50%       {top: -100; left: 0px;background-image: url("/src/images/deliverys/qrcoins.png");width: 10px;height: 10px;}
+    0%        {top: 200px; left: 330px; background-image: url("/src/images/deliverys/qrcoins.png");width: 20px;height: 200px;border-radius:50%;box-shadow: 3px 0 2px 3px rgb(249, 244, 243);}
+    33%       {top: 400px; left: 490px;background-image: url("/src/images/deliverys/qrcoins.png");width: 200px;height: 200px;} 
+    50%       {top: 500px; left: 530px;background-image: url("/src/images/deliverys/qrcoins.png");width: 5px;height: 5px;}
 
-    61%       {left: 0px; top: -200px; background-image: url("/src/images/deliverys/ourDelivery.jpg");width: 10px;height: 10px;}
-    69%       {left: 0px; top: 0px;  background-image: url("/src/images/deliverys/ourDelivery.jpg");}
-    74%       {left: 0px; top: -50px; background-image: url("/src/images/deliverys/ourDelivery.jpg");}
-    100%       {left: 0px; top: -50px; background-image: url("/src/images/deliverys/ourDelivery.jpg");width: 350px;height: 350px; border-radius: 50%;}
+    61%       {top: 500px; left: 530px; background-image: url("/src/images/deliverys/ourDelivery.jpg");width: 10px;height: 10px;}
+    100%       {top: 200px; left: 330px; background-image: url("/src/images/deliverys/ourDelivery.jpg");width: 350px;height: 350px; border-radius: 50%;box-shadow: 3px 0 2px 3px rgb(249, 244, 243);}
   }
