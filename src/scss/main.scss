@@ -21,10 +21,29 @@ body {
 //   display: flex;
 //   flex-direction: row;
 // }
+.overall {
+
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    // display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    // background: #000;
+}
 
 .carousel-item {
   height: 850px;
+
+  img {
+      object-fit: cover;
+  }
 }
+
 
 .sideTitle {
   font-family: "Yuji Boku", serif;
