@@ -5,100 +5,437 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Le Frog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shalimar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Shalimar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body>
-    <header>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
+  <body class="bg-dark">
+    <div class="chef1"><span>Hello world</span></div>
+    <div class="chef2"><span>Hello world</span></div>
+    <div class="chef3"><span>Hello world</span></div>
+    <div class="chef4"><span>Hello world</span></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+                width="30"
+                height="24"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
+      <div class="col-1"></div>
+    </div>
 
-      <nav class="nav">
-        <img
-          class="nav__logo"
-          srcset=""
-          src="https://images.unsplash.com/photo-1571249104671-f5537fb3e137?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGF2YXRhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt=""
-        />
-        <ul class="menu-nav">
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="index.html">Home</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="menu.html">Menu</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navbar is done -->
 
-    <section class="hero">
-      <img
-        class="hero__img"
-        srcset=""
-        src="https://images.unsplash.com/photo-1500313830540-7b6650a74fd0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcmlzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        alt=""
-      />
-      <p class="hero__text">
-        Amet voluptatum porro placeat voluptates maxime. Quibusdam eius veniam
-        vel illo perspiciatis mollitia Ex ut libero atque distinctio minima ea?
-        Recusandae quia quod obcaecati ad illo dolore tempora id vel. Iure
-        quisquam iure aut provident et sint. Rem officia reiciendis numquam
-        aperiam itaque? Sit autem praesentium repudiandae id maxime dolore,
-        quod, impedit non natus, similique Quasi aperiam tempore excepturi
-        placeat quos Laborum cum non quisquam sapiente nobis Doloribus eius
-        exercitationem placeat iusto iure dolores! Quis impedit laborum
-        asperiores obcaecati libero Placeat cumque quaerat vero minus ratione
-        Earum accusamus illo ad quisquam sequi Iure sint ratione voluptas natus
-        explicabo non. Architecto natus omnis ipsum perferendis ipsa Repellendus
-        ullam minima earum tenetur quis atque Ipsum expedita iusto similique
-        enim tempore. Dolore rem tempora aspernatur rem quam dolorum adipisci
-        delectus aliquid Illo tenetur quaerat perferendis totam consectetur.
-        Sint iure eligendi sint placeat eveniet. Unde ab eum autem et harum
-        Labore repudiandae unde veniam maxime provident! Atque quia deserunt
-        voluptatum dolorum illum. Nostrum eligendi recusandae provident aliquid
-        cumque temporibus veritatis. Temporibus explicabo iste eveniet ipsum
-        quam. Id excepturi quo veritatis suscipit ipsa. Vero quas perferendis
-        sapiente ea maiores. Ad quidem obcaecati fugit soluta id? Quos omnis
-        eveniet neque quis molestiae molestias eveniet! Quisquam debitis
-        veritatis perferendis aperiam eligendi? Modi omnis reprehenderit fugiat
-        deserunt esse! Consequuntur illum nobis modi cupiditate consequuntur
-        Beatae dolorum similique quibusdam laborum soluta aliquid autem Soluta
-        illum culpa in nulla illum beatae optio iste Accusamus corporis saepe
-        culpa quibusdam saepe. Eius asperiores tempore quisquam voluptatum amet.
-        Magnam laudantium asperiores qui distinctio ratione debitis Rerum quod
-        est voluptatem dolorem repudiandae Nobis alias explicabo omnis fuga
-        fugit Recusandae aliquam eos sunt dolorum quam iusto A quis placeat
-        assumenda itaque illo Odio aut ipsa enim animi beatae commodi. Veniam
-        quam ipsa voluptatibus magnam ullam earum Impedit molestias illum
-        recusandae officiis temporibus quidem temporibus Quia vitae fugiat iure
-        animi odio? Id enim natus voluptas odit praesentium aut Adipisci maiores
-        neque voluptas aspernatur porro? Inventore necessitatibus explicabo amet
-        esse autem Exercitationem quis esse veritatis explicabo deserunt? Fugit
-        laudantium nam iusto magnam voluptas impedit. Debitis odit deleniti
-        harum quae ut autem. Illum nostrum quos blanditiis cupiditate possimus.
-        Assumenda tenetur esse iusto non asperiores? In debitis ipsa similique
-        repellat fugit Nulla veniam esse at ipsa hic. Numquam quas explicabo
-        deleniti quia cumque? Laudantium quis eum rerum officiis nesciunt. Quos
-        dolorum maiores alias illum impedit Est similique dolorum laborum fuga
-        molestiae Ad repellendus perferendis atque delectus molestiae dolorem
-        cumque
-      </p>
-    </section>
-    <main></main>
-    <!-- Custom scripts, edit above this line -->
-    <script src="scripts/index.js"></script>
+    <div class="row">
+      <div
+        class="
+          col-1
+          d-flex
+          justify-content-center
+          align-items-center
+          text-light
+        "
+      >
+        <div class="sideTitle pb-5">Le Frog</div>
+      </div>
+      <div class="col-10">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video autoplay muted loop id="myVideo">
+                <source src="video/rain.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+              <!-- <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." /> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <main>
+          <div class="text">
+            <h1>Simple Single carousel</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              non atque adipisci est, recusandae aperiam, ullam minima quos
+              nostrum animi voluptas sequi. At repellendus fuga reiciendis
+              accusantium, dolor suscipit repellat?
+            </p>
+          </div>
+          <header>
+            <h1>Top Hottest Products</h1>
+            <p>
+              <span class="arrow">&#139;</span>
+              <span class="arrow">&#155;</span>
+            </p>
+          </header>
+          <section>
+            <div class="product">
+              <picture>
+                <img src="image/banner2.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product One</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+            <div class="product">
+              <picture>
+                <img src="image/banner1.png" alt="" />
+              </picture>
+              <div class="detail">
+                <p>
+                  <b>Product Two</b><br />
+                  <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+              </div>
+              <div class="button">
+                <p class="star">
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                  <strong>&star;</strong>
+                </p>
+                <a class="owl__link" href="#">Add-cart</a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
