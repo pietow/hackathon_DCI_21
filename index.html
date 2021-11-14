@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Le Frog</title>
+    <title>Cafe Au Love</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,15 +43,10 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col-10">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar p-0 navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt=""
-                width="30"
-                height="24"
-              />
+            <a class="navbar-brand p-0" href="#">
+              <img src="./images/logo.png" alt="" width="75" height="75" />
             </a>
             <button
               class="navbar-toggler"
@@ -67,12 +62,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="./menu.html">Menu</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -130,7 +128,7 @@
           text-light
         "
       >
-        <div class="sideTitle pb-5">Le Frog</div>
+        <div class="sideTitle pb-5">Cafe au Love</div>
       </div>
       <div class="col-10">
         <div
@@ -162,11 +160,16 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <video autoplay muted loop id="myVideo">
-                <source src="video/rain.mp4" type="video/mp4" />
-                Your browser does not support HTML5 video.
-              </video>
-              <!-- <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." /> -->
+              <!-- <video autoplay muted loop id="myVideo"> -->
+              <!--   <source src="./images/main/first.jpg" type="video/mp4" /> -->
+              <!--   Your browser does not support HTML5 video. -->
+              <!-- </video> -->
+
+              <img
+                src="./images/main/first.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>
@@ -176,7 +179,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                src="./images/main/second.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -189,7 +192,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                src="./images/main/third.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -246,11 +249,14 @@
           <section>
             <div class="product">
               <picture>
-                <img src="image/banner2.png" alt="" />
+                <img
+                  src="/images/dishes/10854_chocolate_souffle.webp"
+                  alt="nicoise salad"
+                />
               </picture>
               <div class="detail">
                 <p>
-                  <b>Product One</b><br />
+                  <b>Nicoise Salad</b><br />
                   <small>New arrival</small>
                 </p>
                 <samp>$45.00</samp>
@@ -263,12 +269,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="/images/dishes/10651_salad_lyonnaisey.webp"
+                  alt="salad lyonnaisey"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -285,12 +294,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/28555_nicoise_salad2.webp"
+                  alt="chocolate souffle"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -307,12 +319,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/11137_spiked_apple_galette.webp"
+                  alt="spiked apple galette"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -329,12 +344,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/13500_brandied_pear_tart.webp"
+                  alt="brandied pear tart"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -351,12 +369,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/13696_smashed_potatoes.webp"
+                  alt="smashed potatoes"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -373,12 +394,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/27893_coq_au_vin.webp"
+                  alt=" coq au vin"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -395,12 +419,15 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
             <div class="product">
               <picture>
-                <img src="image/banner1.png" alt="" />
+                <img
+                  src="images/dishes/28273_asparagus_mimosa.webp"
+                  alt="asparagus mimosa"
+                />
               </picture>
               <div class="detail">
                 <p>
@@ -417,7 +444,7 @@
                   <strong>&star;</strong>
                   <strong>&star;</strong>
                 </p>
-                <a  class="owl__link"href="#">Add-cart</a>
+                <a class="owl__link" href="#">Add-cart</a>
               </div>
             </div>
           </section>

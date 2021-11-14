@@ -57,6 +57,7 @@
 //}
 
 //#############MINION####
+
 const messages = [
     {
         time: 5,
@@ -156,13 +157,3 @@ setInterval(() => {
         startIdx++;
     }
 }, 10000)
-
-
-// setTimeout(() => {
-//     const oldTransform = minion.style.transform
-//     minion.style.transform = 'translateX(0)'
-//     setTimeout(() => {
-//         minion.style.transform = oldTransform
-//     }, 5000)
-// }, 2000)
-
