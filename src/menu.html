@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Le Frog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,192 +17,250 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Shalimar&display=swap"
         rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
-
-    <header>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <nav class="navbar p-0 navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand p-0" href="#">
+              <img src="./images/logo.png" alt="" width="75" height="75" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
+      <div class="col-1"></div>
+    </div>
 
-      <nav class="nav">
-        <img
-          class="nav__logo"
-          srcset=""
-          src="https://images.unsplash.com/photo-1571249104671-f5537fb3e137?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGF2YXRhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt=""
-        />
-        <ul class="menu-nav">
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="index.html">Home</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="menu.html">Menu</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link" href="">Dummy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navbar is done -->
+    
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <section class="row_boxes">
+                <div class="max_box">
+                    <div class="table sm-5 md-3">
+                        <h2 class="old_text_h sm-5">Entrée</h2>
 
-    <section class="row_boxes">
-        <div class="max_box">
-        <div class="table sm-5 md-3">
-            <h2 class="old_text_h sm-5">Entrée</h2>
+                        <div class="col_table one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Eventail de tomates</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Ris de veau</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Macedonie de légumes</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Crazy a frog</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Filet de lazy</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="col_table one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Eventail de tomates</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Ris de veau</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Macedonie de légumes</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Crazy a frog</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Filet de lazy</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-        </div>
+                    <div class="table sm-5 md-3">
+                        <h2 class="old_text_h sm-5">plat</h2>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Desosse de pied</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table   one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Pied de sosse</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table   one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Menu three</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Prueneux</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table   one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Noprueneux de piet</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table sm-10 md-3">
+                        <h2 class="col_table old_text_h sm-10">dessert</h2>
 
-        <div class="table sm-5 md-3">
-            <h2 class="old_text_h sm-5">plat</h2>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Desosse de pied</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Cakes` armagnac</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Profiterolle</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table   one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>No rolle de profi</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table   one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>No rolle no profi</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col_table  one">
+                            <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
+                            <div class="text">
+                                <h3>Gratin ananas</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
                 </div>
+        <div class="col-1"></div>
             </div>
-            <div class="col_table   one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Pied de sosse</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table   one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Menu three</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Prueneux</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table   one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Noprueneux de piet</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="table sm-10 md-3">
-            <h2 class="col_table old_text_h sm-10">dessert</h2>
-
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Cakes` armagnac</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Profiterolle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table   one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>No rolle de profi</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table   one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>No rolle no profi</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-            <div class="col_table  one">
-                <!-- <img src="./images/breakfast2.jpg" alt="breakfast image"> -->
-                <div class="text">
-                    <h3>Gratin ananas</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit............. €15
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 
     <!--     <section class="footer">
@@ -214,3 +271,4 @@
 </body>
 
 </html>
+
