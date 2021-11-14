@@ -223,7 +223,7 @@ span.price {
 .row_boxes {
   width: 100%;
   height: auto;
-  //background-image: url("../images/elegant-old-paper-background-texture-12898151.jpg");
+  background-image: url("../images/elegant-old-paper-background-texture-12898151.jpg");
   background-repeat: repeat;
   display: -webkit-box;
   display: -ms-flexbox;

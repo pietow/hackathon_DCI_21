@@ -161,20 +161,20 @@ setInterval(() => {
 
 const dishes = [
     {
-        name: 'yummy',
+        name: 'Asparagus mimosa',
         price: 'EUR 45',
-        image: 'images/dishes/10854_chocolate_souffle.webp'
+        image: 'images/dishes/Asparagus mimosa.webp'
     },
     {
-        name: 'dish2',
+        name: 'Coq au vin ',
         price: '$5',
-        image: 'images/dishes/10651_salad_lyonnaisey.webp'
+        image: 'images/dishes/Coq au vin.webp'
     },{
-        name: 'dish3',
+        name: 'Pepper filet mignon',
         price: '$8',
-        image: 'images/dishes/28555_nicoise_salad2.webp'
+        image: 'images/dishes/Pepper filet mignon.webp'
     },{
-        name: 'dish4',
+        name: 'Spiked apple galette',
         price: '$7',
         image: 'images/dishes/11137_spiked_apple_galette.webp'
     }, 
