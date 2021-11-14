@@ -20,18 +20,17 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body class="bg-light">
+<body>
 
     <header class="headermenu">
-        <div class="chef1"><span>Hello world</span></div>
-        <div class="chef2"><span>Hello world</span></div>
-        <div class="chef3"><span>Hello world</span></div>
-        <div class="chef4"><span>Hello world</span></div>
+        <!-- <div class="chef1"><span>Hello world</span></div> -->
+        <!-- <div class="chef2"><span>Hello world</span></div> -->
+        <!-- <div class="chef3"><span>Hello world</span></div> -->
+        <!-- <div class="chef4"><span>Hello world</span></div> -->
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
@@ -68,23 +67,20 @@
         </div>
 
     </header>
-    <div class="container img_bg">
+    <div class="container">
+        <img src="images/coin/cafe.png" alt="">
+    </div>
+    <div class="container delivery_map">
+        <div id="googleMap" style="width:100%;height:700px;"></div>
+    </div>
 
-        <section class="delivery_page delivery_page-center">
-            <div class="delivery_box">
-            </div>
-        </section>
-        <!-- <div class="row"> -->
-        <!--     <div class="col-1"></div> -->
-        <!--     <div class="col-10"> -->
-        <!--         <img src="images/coin/cafe.png" alt=""> -->
-        <!--     </div> -->
-        <!--     <div class="col-1"></div> -->
-        <!-- </div> -->
-       
-    </div>
-    </div>
-    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/index.js"></script> -->
+    <script src="scripts/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABEcGxHTeHXL1zMyaRscQ-bOpPZoOHFro&callback=myMap&libraries=places"></script>
+    <script>
+        google.maps.event.addDomListener(window, 'load', init);
+    </script>
 </body>
 
 </html>

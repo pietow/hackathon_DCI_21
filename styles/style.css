@@ -199,6 +199,13 @@ span.price {
     transform: perspective(1000px) rotateY(360deg);
   }
 }
+.img_bg {
+  background-image: url("../images/coin/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .menu_top_image {
   -o-object-fit: cover;
   object-fit: cover;
