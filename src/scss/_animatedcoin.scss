@@ -37,7 +37,7 @@
     {
     top: -100px;
     left: 400px; 
-    background-image: url("../images/coin/front.png");
+    background-image: url("../images/coin/back.png");
     width: 200px;height: 200px;
     border-radius:50%;
     transform: perspective(1000px) rotateY(0deg);
@@ -46,13 +46,13 @@
     {
     top: 0px; 
     left: 0; 
-    background-image: url("../images/coin/front.png");
+    background-image: url("../images/coin/back.png");
   }
     33%       
     {
     top: 0; 
     left: 0px;
-    background-image: url("../images/coin/front.png");
+    background-image: url("../images/coin/back.png");
     width: 200px;
     height: 200px;
     transform: perspective(1000px) rotateY(360deg);
@@ -61,7 +61,7 @@
     {
     top: -100; 
     left: 0px;
-    background-image: url("../images/coin/front.png");
+    background-image: url("../images/coin/back.png");
     width: 10px;
     height: 10px;
     transform: perspective(1000px) rotateY(0deg);
