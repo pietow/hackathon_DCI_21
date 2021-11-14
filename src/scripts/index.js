@@ -161,8 +161,8 @@ setInterval(() => {
 
 const dishes = [
     {
-        name: 'dish1',
-        price: '$45',
+        name: 'yummy',
+        price: 'EUR 45',
         image: 'images/dishes/10854_chocolate_souffle.webp'
     },
     {
@@ -231,12 +231,17 @@ dishes.forEach(dish => {
       const cartHtml = `<div class="col-2 mt-3"><div class="card" >
       <img class="card-img-top" src="${dish.image}" width="100" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">$${dish.name}</h5>
+        <h5 class="card-title">${dish.name}</h5>
         <p class="card-text">${dish.price}</p>
         <a href="#" class="btn btn-danger">Delete</a>
       </div>
     </div>` ;
-    tray.appendChild(createElementFromHTML(cartHtml));
+const cardElement = createElementFromHTML(cartHtml) 
+      cardElement.querySelector('.btn-danger').addEventListener('click', (e) => {
+          e.preventDefault()
+          cardElement.remove() 
+      })
+    tray.appendChild(cardElement);
   })
   productsSection.append(product)
 
