@@ -20,6 +20,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
 </head>
@@ -91,81 +92,11 @@
 
     </header>
     <div class="container">
-        <div class="row delivery_main col-12 mt-5">
-            <div class="head_text">
-                <h3>Was never easier and faster</h3>
-                <h4>No form, no call, just send a code with love</h4>
-            </div>
+        <section class="steaming_plate">
 
-            <div class="col-75 bestell_form">
-                <div class="">
-                    <form action="">
-
-                        <div class="row">
-                            <div class="col-50">
-                                <h3>Billing Address</h3>
-                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Send a Love">
-                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                <input type="text" id="email" name="email" placeholder="just@coin.com">
-                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="locationTextField" name="city" placeholder="Bielefeld">
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="zip">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="11001">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row col-6 cart_box">
-                                <div class="col-12">
-                                    <h3>Payment</h3>
-                                    <label for="fname">Accepted Coins&Cards</label>
-                                    <div class="icon-container">
-                                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                        <i class="fa fa-cc-discover" style="color:orange;"></i>
-                                    </div>
-                                </div>
-                                <div class="bestell_coin_image">
-                                    <img src="./src/images/deliverys/5-removebg-preview.png" alt="">
-                                </div>
-                                <div class="col-12">
-                                    <div class="bestell_cart container">
-                                        <h4>Cart <span class="price" style="color:black"><i
-                                                    class="fa fa-shopping-cart"></i> <b>4</b></span>
-                                        </h4>
-                                        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                                        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                                        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                                        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-                                        <p class="line"></p>
-                                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="submit" value="Continue to checkout" class="btn">
-                    </form>
-                </div>
-            </div>
-        </div>
+    </section>
     </div>
-    <div class="container delivery_map">
-        <div id="googleMap" style="width:100%;height:700px;"></div>
-    </div>
-
     <script src="scripts/index.js"></script>
-    <script src="scripts/map.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABEcGxHTeHXL1zMyaRscQ-bOpPZoOHFro&callback=myMap&libraries=places"></script>
-    <script>
-        google.maps.event.addDomListener(window, 'load', init);
-    </script>
 </body>
 
 </html>

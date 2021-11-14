@@ -1,3 +1,9 @@
+.steaming_plate {
+  background-image: url("../src/images/deliverys/steaming plate gif.gif");
+  background-position: center;
+  background-size: cover;
+}
+
 /* ----------------Bestell Form------------- */
 input[type=text] {
   width: 100%;
