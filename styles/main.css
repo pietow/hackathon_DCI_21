@@ -168,8 +168,23 @@ body {
   background: #CCDBEE;
 }
 
+.overall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
 .carousel-item {
   height: 850px;
+}
+.carousel-item img {
+  object-fit: cover;
 }
 
 .sideTitle {
@@ -235,16 +250,19 @@ body {
   z-index: 999;
 }
 
-.chef1 span, .chef2 span, .chef3 span, .chef4 span {
+.chef1 span,
+.chef2 span,
+.chef3 span,
+.chef4 span {
   position: absolute;
   transform: translateX(200px);
-  border: red solid 1px;
   color: black;
   background-color: white;
-  width: 400px;
-  height: 200px;
-  border-radius: 30%;
+  width: content;
+  height: content;
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -468,7 +486,8 @@ p.star {
 }
 
 /* Footer transparent */
-footer.transparent .footer-top, footer.transparent .main-footer {
+footer.transparent .footer-top,
+footer.transparent .main-footer {
   background: transparent;
 }
 
@@ -534,7 +553,7 @@ footer.light .footer-copyright {
 }
 
 .widget-title span {
-  background: #839FAD none repeat scroll 0 0;
+  background: #839fad none repeat scroll 0 0;
   display: block;
   height: 1px;
   margin-top: 25px;
@@ -551,7 +570,8 @@ footer.light .footer-copyright {
   width: 50%;
 }
 
-.widget-title.text-center span, .widget-title.text-center span::after {
+.widget-title.text-center span,
+.widget-title.text-center span::after {
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -598,12 +618,9 @@ ul.social-footer2 li a {
   text-align: center;
 }
 
-.btn {
-  background-color: #ff8d1e;
-  color: #fff;
-}
-
-.btn:hover, .btn:focus, .btn.active {
+.btn:hover,
+.btn:focus,
+.btn.active {
   background: #4b92dc;
   color: #fff;
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
