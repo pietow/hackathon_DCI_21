@@ -21,7 +21,7 @@ label {
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
-  font-size: 16px;
+  font-size: 66px;
 }
 
 .btn {
@@ -160,53 +160,64 @@ span.price {
   0% {
     top: -100px;
     left: 400px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   22% {
     top: 0px;
     left: 0;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
   }
   33% {
     top: 0;
     left: 0px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 200px;
     height: 200px;
+    -webkit-transform: perspective(1000px) rotateY(360deg);
+            transform: perspective(1000px) rotateY(360deg);
   }
   50% {
     top: -100;
     left: 0px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 10px;
     height: 10px;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   61% {
     left: 0px;
     top: -200px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
     width: 10px;
     height: 10px;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   69% {
     left: 0px;
     top: 0px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
   }
   74% {
     left: 0px;
     top: -50px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
   }
   100% {
     left: 0px;
     top: -50px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
     width: 350px;
     height: 350px;
     border-radius: 50%;
+    -webkit-transform: perspective(1000px) rotateY(360deg);
+            transform: perspective(1000px) rotateY(360deg);
   }
 }
 
@@ -214,53 +225,64 @@ span.price {
   0% {
     top: -100px;
     left: 400px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   22% {
     top: 0px;
     left: 0;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
   }
   33% {
     top: 0;
     left: 0px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 200px;
     height: 200px;
+    -webkit-transform: perspective(1000px) rotateY(360deg);
+            transform: perspective(1000px) rotateY(360deg);
   }
   50% {
     top: -100;
     left: 0px;
-    background-image: url("/src/images/deliverys/qrcoins.png");
+    background-image: url("/src/images/coin/front.png");
     width: 10px;
     height: 10px;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   61% {
     left: 0px;
     top: -200px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
     width: 10px;
     height: 10px;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+            transform: perspective(1000px) rotateY(0deg);
   }
   69% {
     left: 0px;
     top: 0px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
   }
   74% {
     left: 0px;
     top: -50px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
   }
   100% {
     left: 0px;
     top: -50px;
-    background-image: url("/src/images/deliverys/ourDelivery.jpg");
+    background-image: url("/src/images/coin/back.png");
     width: 350px;
     height: 350px;
     border-radius: 50%;
+    -webkit-transform: perspective(1000px) rotateY(360deg);
+            transform: perspective(1000px) rotateY(360deg);
   }
 }
 
